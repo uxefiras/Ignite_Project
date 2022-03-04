@@ -1,10 +1,10 @@
-import api_fetcher from "./api";
+import Home from "./Pages/Home";
+
 function App() {
-  console.log(api_fetcher);
   return (
-    <div className="App">
-      <h1>hello</h1>
-    </div>
+    <>
+      <Home />
+    </>
   );
 }
 
