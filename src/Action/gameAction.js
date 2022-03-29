@@ -1,8 +1,8 @@
-import { apiFullUrlGetter } from "../api";
+import { ApiFullUrlGetter } from "../api";
 import axios from "axios";
 
 export const popGamesAsyncer = () => async (dispatch) => {
-  const popGameAxios = await axios.get(apiFullUrlGetter());
+  const popGameAxios = await axios.get(ApiFullUrlGetter());
   dispatch({
     type: "FETCH_GAME",
     payload: {

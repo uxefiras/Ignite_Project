@@ -27,8 +27,7 @@ const Month = getCurrentMonth();
 const Day = getCurrentDay();
 const Year = getCurrentYear();
 const currentDate = `${Year}-${Month}-${Day}`;
-const lastcurrentDate = `${Year - 1}-${Month}-${Day}`;
-const nextDate = `${Year + 1}-${Month}-${Day}`;
 
-export const apiFullUrlGetter = () =>
-  `${api_Url}&dates=${currentDate}&page_size=10`;
+export const ApiFullUrlGetter = () => {
+  return `${api_Url}&dates=${currentDate}&page_size=${10}`;
+};
